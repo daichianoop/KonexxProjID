@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: white;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        background-color: #000000;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #232323;
+        color: #ffffff;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .footer {
+        background-color: #000000;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #ffffff;
+      }
+      .idContainer1 {
+        background: linear-gradient(0deg, #010008, rgb(2, 2, 41), rgb(5, 3, 26));
+
+        width: 300px;
+        height: 460px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .idContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 25px;
+      }
+      .textcontainer1 {
+        padding: 20px;
+      }
+      .section1 {
+        height: 67.5px;
+      }
+      .section2 {
+        height: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section3 {
+        text-align: center;
+        height: 156.5px;
+      }
+      .imagetop {
+        height: 67.5px;
+      }
+      .section1 div {
+        margin: 0;
+        padding: 0;
+      }
+      .icard-img-bg {
+        height: 166.5px;
+        width: 166.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        animation: colorChange 5s infinite alternate;
+        box-shadow: 10px 10px 25px rgba(171, 171, 171, 0.244);
+      }
+      .icard-img {
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+        background: #070707;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .member-name {
+        color: white;
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 22px;
+      }
+      .member-domain {
+        color: white;
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 24px;
+      }
+      .roll-no {
+        color: white;
+        font-family: "SUSE", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 14px;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+        .content {
+          font-size: 14px;
+        }
+      }
+      @keyframes colorChange {
+        0% {
+          background-color: #6198ff;
+        }
+        50% {
+          background-color: #6a5acd;
+        }
+        100% {
+          background-color: #3cb371;
+        }
+      }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="GoogleForm_Banner.png"
+          alt="Description of Image"
+          width="600"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+      <div class="content">
+        <div class="textcontainer1">
+          <div>Hello,</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi rem veritatis iure, laborum numquam facilis soluta cum itaque voluptates qui quis praesentium voluptate error! Dolores architecto mollitia consectetur quod totam! lorem
+          </div>
+        </div>
+        <div class="idContainer">
+          <div class="idContainer1">
+            <div class="section1">
+              <div>
+                <img class="imagetop" src="GoogleForm_Banner.png" alt="" />
+              </div>
+            </div>
+            <div class="section2">
+              <div class="icard-img-bg">
+                <div class="icard-img">
+                  <img width="165" src="Profile.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="section3">
+              <div class="member-name">Member Name</div>
+              <div class="roll-no">Roll No.</div>
+              <div class="member-domain">DOMAIN</div>
+            </div>
+            <div class="id-footer">
+              <img width="300px" src="linkedin banner.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="social-nav">
+
+        </div>
+        <div>&copy; 2024 Konexxions. All rights reserved.</div>
+      </div>
+    </div>
+  </body>
+</html>
